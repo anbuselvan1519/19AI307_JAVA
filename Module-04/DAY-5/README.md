@@ -3,8 +3,8 @@
 To write a parameterized constructor in the Employee class that initializes name and designation, and then call getter methods in the main() method of another class (Sample) to display the values.
 
 ## ALGORITHM :
-
-	1.	Start the program.
+```
+1.	Start the program.
 2.	Define a class Employee:
     a.	  Declare two private string variables: name and designation.
 3.	Create a parameterized constructor in Employee:
@@ -20,20 +20,43 @@ To write a parameterized constructor in the Employee class that initializes name
      c.	Call getDesg() and store the result in a variable empDesg.
 9.	Print the values of empName and empDesg.
 10.	End the program
-
+```
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Parameterized Constructor Using Java
-Developed by: 
-RegisterNumber:  
+Developed by: ANBUSELVAN S
+RegisterNumber: 212223240008
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+class Student {
+String name;
+String dept;
+Student(String n,String d)
+{
+    this.name=n;
+    this.dept=d;
+}
+public void getName(){
+    System.out.println(name);
+}
+public void getDept(){
+    System.out.println(dept);
+}
+}
+public class Sample{
+    public static void main(String[] args){
+        Student obj=new Student("Antony","AIML");
+        obj.getName();
+        obj.getDept();
+    }
+}
+```
 
 
 
@@ -41,11 +64,10 @@ RegisterNumber:
 
 ## OUTPUT:
 
-
+<img width="521" alt="Image" src="https://github.com/user-attachments/assets/355a1bb0-9995-4a37-8a79-c9930975fb24" />
 
 ## RESULT:
 Thus, the  java program was successfully demonstrates the use of a parameterized constructor to initialize class fields.
 
  
-
 
