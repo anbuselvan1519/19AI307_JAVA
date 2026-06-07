@@ -42,4 +42,3 @@ RegisterNumber:
 
 ## RESULT:
 Thus, the Java Program using Method Local Inner Class was executed successfully.
-
