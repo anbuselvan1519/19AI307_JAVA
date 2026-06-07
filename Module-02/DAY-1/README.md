@@ -1,43 +1,53 @@
-# Ex.No:2(A)  STATIC METHOD
+# Ex.No:1(E)  STATIC VARIABLE
 
 ## AIM:
-To create a java program for calculate cube of a number using static method.
+To write a Java program that determines whether a given number is odd or even using a static method. The input number is passed directly to the method, and the result is printed using simple conditional logic.
 
 ## ALGORITHM :
-1.  Start : Begin the process of calculating the cube of a number.
-2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
-3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
-4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
-5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
-6.	Store the result : Store the result of the cubecal function in an integer variable result.
-7.	Output the result :
-8.	Print the cube of the number using System.out.println("Cube is: " + result);.
-9.	End the program.
+1. Start the program.
 
+2. Define a class named `Main`.
 
+3. In the `main()` method:
+   a) Declare an integer variable `num` and assign it the value `7`.
+   b) Call the static method `find_Oddeven(num)` and pass `num` as an argument.
+
+4. Define a static method named `find_Oddeven(int num)`:
+   a) Check if `num % 2 == 0`.
+      - If true, print "`num` is even".
+      - Otherwise, print "`num` is odd".
+
+5. End the program.
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Static method using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a Static Variable using Java
+Developed by: ANBUSELVAN S
+RegisterNumber: 212223240008
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.Scanner;
+public class Main{
+public static void main (String[] args){
+int num=7;
+find_Oddeven(num);
+}
 
-
-
-
-
-
-
+static void find_Oddeven(int num){
+  if(num%2==0) 
+      System.out.println(num+" is even"); 
+  else 
+      System.out.println(num+" is odd");
+ }
+}
+```
 ## OUTPUT:
-
-
+![image](https://github.com/user-attachments/assets/8f7cdb15-9d19-4cc3-8d20-2c0a25af9899)
 
 ## RESULT:
-Thus the java program for calculate cube of a number using static method has been executed successfully.
-
+Thus, the Java program to check whether a number is odd or even using a static method with a fixed input value (7) is successfully created and executed.
